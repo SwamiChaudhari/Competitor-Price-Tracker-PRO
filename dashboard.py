@@ -11,6 +11,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 from datetime import datetime, timedelta
+import os
 from pathlib import Path
 
 # ─────────────────────────────────────────────
@@ -143,7 +144,9 @@ st.markdown(
 # ─────────────────────────────────────────────
 #  CONSTANTS
 # ─────────────────────────────────────────────
-DB_PATH = Path(r"D:\Competitor-Price-Tracker-PRO\prices.db")
+# Always resolve prices.db relative to this script's own folder
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH  = Path(os.path.join(BASE_DIR, "prices.db"))
 
 PLOTLY_LAYOUT = dict(
     paper_bgcolor="#111111",
@@ -337,8 +340,8 @@ with chart_col:
                 bargap=0.35,
                 height=340,
             )
-            fig_bar.update_xaxes(title=None)
-            fig_bar.update_yaxes(title="₹ Avg Sale Price", tickprefix="₹")
+            fig_bar.update_xaxis(title=None)
+            fig_bar.update_yaxis(title="₹ Avg Sale Price", tickprefix="₹")
 
             st.plotly_chart(fig_bar, use_container_width=True)
         else:
@@ -365,8 +368,8 @@ if not df.empty and len(df) > 2:
         height=280,
         legend_title_text="Source",
     )
-    fig_hist.update_xaxes(title="Discount %", ticksuffix="%")
-    fig_hist.update_yaxes(title="# Products")
+    fig_hist.update_xaxis(title="Discount %", ticksuffix="%")
+    fig_hist.update_yaxis(title="# Products")
     st.plotly_chart(fig_hist, use_container_width=True)
 
 # ─────────────────────────────────────────────

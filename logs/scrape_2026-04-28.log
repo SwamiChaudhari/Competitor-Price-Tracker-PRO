@@ -1,0 +1,66 @@
+2026-04-28 16:21:34 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-28 16:21:38 | INFO | Fetching page=1 delay=4.55s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-28 16:21:40 | INFO | Parsed page=1 products_found=24
+2026-04-28 16:21:44 | INFO | Fetching page=2 delay=3.66s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-28 16:21:45 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-28 16:21:45 | INFO | Parsed page=2 products_found=24
+2026-04-28 16:21:49 | INFO | Fetching page=1 delay=4.03s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-28 16:21:49 | INFO | Fetching page=3 delay=3.38s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-28 16:21:50 | INFO | Parsed page=3 products_found=24
+2026-04-28 16:21:50 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-28.json count=50
+2026-04-28 16:21:50 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-28 16:21:52 | INFO | Parsed page=1 products_found=24
+2026-04-28 16:21:55 | INFO | Fetching Amazon page=1 delay=4.59s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-28 16:21:56 | INFO | Fetching page=2 delay=4.31s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-28 16:21:57 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.28s
+2026-04-28 16:21:58 | INFO | Parsed page=2 products_found=24
+2026-04-28 16:22:00 | INFO | Parsed Amazon page=1 products_found=20
+2026-04-28 16:22:02 | INFO | Fetching page=3 delay=3.98s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-28 16:22:03 | INFO | Parsed page=3 products_found=24
+2026-04-28 16:22:03 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-28.json count=50
+2026-04-28 16:22:03 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-28 16:22:05 | INFO | Fetching Amazon page=2 delay=4.11s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-28 16:22:06 | INFO | Fetching Amazon page=1 delay=2.37s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-28 16:22:07 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.18s
+2026-04-28 16:22:07 | INFO | Parsed Amazon page=2 products_found=21
+2026-04-28 16:22:09 | INFO | Parsed Amazon page=1 products_found=20
+2026-04-28 16:22:10 | INFO | Fetching Amazon page=3 delay=3.06s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-28 16:22:13 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-28 16:22:13 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-28.json count=50
+2026-04-28 16:22:13 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-28.json count=100
+2026-04-28 16:23:56 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-28 16:23:59 | INFO | Fetching page=1 delay=3.79s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-28 16:24:02 | INFO | Parsed page=1 products_found=24
+2026-04-28 16:24:04 | INFO | Fetching page=2 delay=2.12s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-28 16:24:05 | INFO | Parsed page=2 products_found=24
+2026-04-28 16:24:08 | INFO | Fetching page=3 delay=3.23s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-28 16:24:10 | INFO | Parsed page=3 products_found=24
+2026-04-28 16:24:10 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-28.json count=50
+2026-04-28 16:24:10 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-28 16:24:13 | INFO | Fetching Amazon page=1 delay=3.68s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-28 16:24:14 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.28s
+2026-04-28 16:24:17 | INFO | Parsed Amazon page=1 products_found=20
+2026-04-28 16:24:22 | INFO | Fetching Amazon page=2 delay=4.37s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-28 16:24:24 | INFO | Parsed Amazon page=2 products_found=21
+2026-04-28 16:24:28 | INFO | Fetching Amazon page=3 delay=4.19s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-28 16:24:30 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-28 16:24:30 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-28.json count=50
+2026-04-28 16:24:30 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-28.json count=100
+2026-04-28 16:25:07 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-28 16:25:10 | INFO | Fetching page=1 delay=2.70s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-28 16:25:13 | INFO | Parsed page=1 products_found=24
+2026-04-28 16:25:16 | INFO | Fetching page=2 delay=2.90s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-28 16:25:17 | INFO | Parsed page=2 products_found=24
+2026-04-28 16:25:19 | INFO | Fetching page=3 delay=2.28s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-28 16:25:22 | INFO | Parsed page=3 products_found=24
+2026-04-28 16:25:22 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-28.json count=50
+2026-04-28 16:25:22 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-28 16:25:27 | INFO | Fetching Amazon page=1 delay=4.93s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-28 16:25:29 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.14s
+2026-04-28 16:25:32 | INFO | Parsed Amazon page=1 products_found=20
+2026-04-28 16:25:37 | INFO | Fetching Amazon page=2 delay=4.50s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-28 16:25:39 | INFO | Parsed Amazon page=2 products_found=20
+2026-04-28 16:25:43 | INFO | Fetching Amazon page=3 delay=3.40s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-28 16:25:45 | INFO | Parsed Amazon page=3 products_found=22
+2026-04-28 16:25:45 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-28.json count=50
+2026-04-28 16:25:45 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-28.json count=100

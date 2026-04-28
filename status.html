@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Competitor Price Tracker — Status</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: #111a2e;
+        --border: rgba(255, 255, 255, 0.08);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.68);
+        --accent: #7c3aed;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 700px at 20% 10%, rgba(124, 58, 237, 0.25), transparent 60%),
+                    radial-gradient(1000px 600px at 80% 20%, rgba(59, 130, 246, 0.16), transparent 55%),
+                    var(--bg);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px 18px 40px;
+      }
+      header {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0;
+        letter-spacing: 0.2px;
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 12px;
+      }
+      .card {
+        grid-column: span 6;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 16px 14px;
+        backdrop-filter: blur(6px);
+        min-height: 92px;
+      }
+      .label {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .value {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      .hint {
+        margin-top: 8px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: rgba(255, 255, 255, 0.86);
+        background: rgba(17, 26, 46, 0.7);
+        font-size: 12px;
+      }
+      .accent {
+        color: #e9d5ff;
+      }
+      footer {
+        margin-top: 14px;
+        color: rgba(255, 255, 255, 0.52);
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      @media (max-width: 720px) {
+        .card { grid-column: span 12; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1>Competitor Price Tracker <span class="accent">Status</span></h1>
+          <div class="sub">Quick operational snapshot</div>
+        </div>
+        <div class="pill">Static page</div>
+      </header>
+
+      <section class="grid" aria-label="Status metrics">
+        <div class="card">
+          <div class="label">Last run</div>
+          <div class="value">2026-04-27 09:15</div>
+          <div class="hint">Most recent completed pipeline execution</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Products scraped</div>
+          <div class="value">100</div>
+          <div class="hint">Total products collected in the last run</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Alerts sent</div>
+          <div class="value">3</div>
+          <div class="hint">Email alerts successfully delivered</div>
+        </div>
+
+        <div class="card">
+          <div class="label">DB size</div>
+          <div class="value">1,247 rows</div>
+          <div class="hint">Total records currently stored in <code>prices.db</code></div>
+        </div>
+
+        <div class="card" style="grid-column: span 12;">
+          <div class="label">Next run</div>
+          <div class="value">15:00</div>
+          <div class="hint">Scheduled execution time</div>
+        </div>
+      </section>
+
+      <footer>
+        <div>File: <code>status.html</code></div>
+        <div>Tip: open directly in your browser</div>
+      </footer>
+    </div>
+  </body>
+</html>
+

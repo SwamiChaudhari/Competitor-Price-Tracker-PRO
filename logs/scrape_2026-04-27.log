@@ -1,0 +1,357 @@
+2026-04-27 13:32:35 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:32:38 | INFO | Fetching page=1 delay=3.01s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:32:39 | INFO | Parsed page=1 products_found=0
+2026-04-27 13:32:42 | INFO | Fetching page=2 delay=2.42s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:32:42 | INFO | Parsed page=2 products_found=0
+2026-04-27 13:32:46 | INFO | Fetching page=3 delay=4.36s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:32:46 | INFO | Parsed page=3 products_found=0
+2026-04-27 13:32:48 | INFO | Fetching page=4 delay=2.15s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4
+2026-04-27 13:32:48 | INFO | Parsed page=4 products_found=0
+2026-04-27 13:32:48 | WARNING | No products parsed on page=4; markup may have changed.
+2026-04-27 13:32:52 | INFO | Fetching page=5 delay=3.44s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5
+2026-04-27 13:32:52 | INFO | Parsed page=5 products_found=0
+2026-04-27 13:32:52 | WARNING | No products parsed on page=5; markup may have changed.
+2026-04-27 13:32:55 | INFO | Fetching page=6 delay=3.32s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6
+2026-04-27 13:32:55 | INFO | Parsed page=6 products_found=0
+2026-04-27 13:32:55 | WARNING | No products parsed on page=6; markup may have changed.
+2026-04-27 13:32:58 | INFO | Fetching page=7 delay=2.44s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7
+2026-04-27 13:32:58 | INFO | Parsed page=7 products_found=0
+2026-04-27 13:32:58 | WARNING | No products parsed on page=7; markup may have changed.
+2026-04-27 13:33:01 | INFO | Fetching page=8 delay=3.56s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8
+2026-04-27 13:33:02 | INFO | Parsed page=8 products_found=0
+2026-04-27 13:33:02 | WARNING | No products parsed on page=8; markup may have changed.
+2026-04-27 13:33:05 | INFO | Fetching page=9 delay=3.94s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9
+2026-04-27 13:33:06 | INFO | Parsed page=9 products_found=0
+2026-04-27 13:33:06 | WARNING | No products parsed on page=9; markup may have changed.
+2026-04-27 13:33:09 | INFO | Fetching page=10 delay=3.02s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10
+2026-04-27 13:33:09 | INFO | Parsed page=10 products_found=0
+2026-04-27 13:33:09 | WARNING | No products parsed on page=10; markup may have changed.
+2026-04-27 13:33:09 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=0
+2026-04-27 13:35:59 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:36:04 | INFO | Fetching page=1 delay=4.82s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:36:05 | INFO | Parsed page=1 products_found=0
+2026-04-27 13:36:08 | INFO | Fetching page=2 delay=3.11s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:36:08 | INFO | Parsed page=2 products_found=0
+2026-04-27 13:36:08 | WARNING | No products parsed on page=2; markup may have changed.
+2026-04-27 13:36:12 | INFO | Fetching page=3 delay=4.24s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:36:12 | INFO | Parsed page=3 products_found=0
+2026-04-27 13:36:12 | WARNING | No products parsed on page=3; markup may have changed.
+2026-04-27 13:36:15 | INFO | Fetching page=4 delay=2.75s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4
+2026-04-27 13:36:15 | INFO | Parsed page=4 products_found=0
+2026-04-27 13:36:15 | WARNING | No products parsed on page=4; markup may have changed.
+2026-04-27 13:36:18 | INFO | Fetching page=5 delay=2.92s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5
+2026-04-27 13:36:18 | INFO | Parsed page=5 products_found=0
+2026-04-27 13:36:18 | WARNING | No products parsed on page=5; markup may have changed.
+2026-04-27 13:36:20 | INFO | Fetching page=6 delay=2.23s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6
+2026-04-27 13:36:21 | INFO | Parsed page=6 products_found=0
+2026-04-27 13:36:21 | WARNING | No products parsed on page=6; markup may have changed.
+2026-04-27 13:36:25 | INFO | Fetching page=7 delay=4.07s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7
+2026-04-27 13:36:25 | INFO | Parsed page=7 products_found=0
+2026-04-27 13:36:25 | WARNING | No products parsed on page=7; markup may have changed.
+2026-04-27 13:36:29 | INFO | Fetching page=8 delay=4.32s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8
+2026-04-27 13:36:29 | INFO | Parsed page=8 products_found=0
+2026-04-27 13:36:29 | WARNING | No products parsed on page=8; markup may have changed.
+2026-04-27 13:36:33 | INFO | Fetching page=9 delay=3.79s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9
+2026-04-27 13:36:33 | INFO | Parsed page=9 products_found=0
+2026-04-27 13:36:33 | WARNING | No products parsed on page=9; markup may have changed.
+2026-04-27 13:36:36 | INFO | Fetching page=10 delay=3.00s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10
+2026-04-27 13:36:36 | INFO | Parsed page=10 products_found=0
+2026-04-27 13:36:36 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=0
+2026-04-27 13:40:03 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:40:06 | INFO | Fetching page=1 delay=2.51s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:40:07 | INFO | Parsed page=1 products_found=0
+2026-04-27 13:40:11 | INFO | Fetching page=2 delay=4.09s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:40:11 | INFO | Parsed page=2 products_found=0
+2026-04-27 13:40:13 | INFO | Fetching page=3 delay=2.12s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:40:13 | INFO | Parsed page=3 products_found=0
+2026-04-27 13:40:13 | WARNING | No products parsed on page=3; markup may have changed.
+2026-04-27 13:40:15 | INFO | Fetching page=4 delay=2.14s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4
+2026-04-27 13:40:15 | INFO | Parsed page=4 products_found=0
+2026-04-27 13:40:15 | WARNING | No products parsed on page=4; markup may have changed.
+2026-04-27 13:40:19 | INFO | Fetching page=5 delay=3.61s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5
+2026-04-27 13:40:19 | INFO | Parsed page=5 products_found=0
+2026-04-27 13:40:19 | WARNING | No products parsed on page=5; markup may have changed.
+2026-04-27 13:40:24 | INFO | Fetching page=6 delay=4.74s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6
+2026-04-27 13:40:24 | INFO | Parsed page=6 products_found=0
+2026-04-27 13:40:27 | INFO | Fetching page=7 delay=3.54s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7
+2026-04-27 13:40:27 | INFO | Parsed page=7 products_found=0
+2026-04-27 13:40:27 | WARNING | No products parsed on page=7; markup may have changed.
+2026-04-27 13:40:30 | INFO | Fetching page=8 delay=2.33s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8
+2026-04-27 13:40:30 | INFO | Parsed page=8 products_found=0
+2026-04-27 13:40:30 | WARNING | No products parsed on page=8; markup may have changed.
+2026-04-27 13:40:32 | INFO | Fetching page=9 delay=2.30s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9
+2026-04-27 13:40:32 | INFO | Parsed page=9 products_found=0
+2026-04-27 13:40:32 | WARNING | No products parsed on page=9; markup may have changed.
+2026-04-27 13:40:36 | INFO | Fetching page=10 delay=3.68s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10
+2026-04-27 13:40:36 | INFO | Parsed page=10 products_found=0
+2026-04-27 13:40:36 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=0
+2026-04-27 13:43:06 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:43:10 | INFO | Fetching page=1 delay=4.45s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:43:11 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.34s
+2026-04-27 13:43:12 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.31s
+2026-04-27 13:43:14 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.48s
+2026-04-27 13:43:15 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.94s
+2026-04-27 13:43:17 | ERROR | Page fetch failed; skipping page=1 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:43:22 | INFO | Fetching page=2 delay=4.69s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:43:22 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.11s
+2026-04-27 13:43:23 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.49s
+2026-04-27 13:43:25 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.78s
+2026-04-27 13:43:27 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.91s
+2026-04-27 13:43:29 | ERROR | Page fetch failed; skipping page=2 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:43:31 | INFO | Fetching page=3 delay=2.41s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:43:31 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.07s
+2026-04-27 13:43:32 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.33s
+2026-04-27 13:43:34 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.69s
+2026-04-27 13:43:35 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.99s
+2026-04-27 13:43:37 | ERROR | Page fetch failed; skipping page=3 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:43:41 | INFO | Fetching page=4 delay=4.00s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4
+2026-04-27 13:43:41 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.29s
+2026-04-27 13:43:43 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.53s
+2026-04-27 13:43:44 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.65s
+2026-04-27 13:43:46 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 2.01s
+2026-04-27 13:43:48 | ERROR | Page fetch failed; skipping page=4 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=4. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:43:53 | INFO | Fetching page=5 delay=4.55s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5
+2026-04-27 13:43:53 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.28s
+2026-04-27 13:43:54 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.23s
+2026-04-27 13:43:56 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.50s
+2026-04-27 13:43:57 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 2.00s
+2026-04-27 13:43:59 | ERROR | Page fetch failed; skipping page=5 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=5. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:04 | INFO | Fetching page=6 delay=4.90s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6
+2026-04-27 13:44:04 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.01s
+2026-04-27 13:44:05 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.37s
+2026-04-27 13:44:07 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.62s
+2026-04-27 13:44:08 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.76s
+2026-04-27 13:44:10 | ERROR | Page fetch failed; skipping page=6 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=6. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:14 | INFO | Fetching page=7 delay=4.17s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7
+2026-04-27 13:44:14 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.17s
+2026-04-27 13:44:16 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.44s
+2026-04-27 13:44:17 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.62s
+2026-04-27 13:44:19 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.96s
+2026-04-27 13:44:21 | ERROR | Page fetch failed; skipping page=7 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=7. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:23 | INFO | Fetching page=8 delay=2.05s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8
+2026-04-27 13:44:23 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.05s
+2026-04-27 13:44:24 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.51s
+2026-04-27 13:44:26 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.47s
+2026-04-27 13:44:27 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.83s
+2026-04-27 13:44:29 | ERROR | Page fetch failed; skipping page=8 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=8. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:32 | INFO | Fetching page=9 delay=2.59s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9
+2026-04-27 13:44:32 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.30s
+2026-04-27 13:44:33 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.54s
+2026-04-27 13:44:35 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.54s
+2026-04-27 13:44:36 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.76s
+2026-04-27 13:44:38 | ERROR | Page fetch failed; skipping page=9 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=9. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:41 | INFO | Fetching page=10 delay=3.29s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10
+2026-04-27 13:44:44 | WARNING | Request failed (attempt 1/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.18s
+2026-04-27 13:44:45 | WARNING | Request failed (attempt 2/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.38s
+2026-04-27 13:44:46 | WARNING | Request failed (attempt 3/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.76s
+2026-04-27 13:44:48 | WARNING | Request failed (attempt 4/4). url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10 err=HTTPError('HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs'). Backing off 1.77s
+2026-04-27 13:44:50 | ERROR | Page fetch failed; skipping page=10 url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10 err=RuntimeError('Failed to fetch after 4 retries: https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=10. Last error: HTTPError(\'HTTP 403. Body snippet: <!DOCTYPE html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Flipkart reCAPTCHA</title><link href=https://static-assets-web.flixcart.com/batman-returns/batman-returns/s/recaptcha.cs\')')
+2026-04-27 13:44:50 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=0
+2026-04-27 13:45:24 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:45:29 | INFO | Fetching page=1 delay=4.99s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:45:31 | INFO | Parsed page=1 products_found=24
+2026-04-27 13:45:35 | INFO | Fetching page=2 delay=4.27s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:45:36 | INFO | Parsed page=2 products_found=24
+2026-04-27 13:45:40 | INFO | Fetching page=3 delay=4.07s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:45:41 | INFO | Parsed page=3 products_found=24
+2026-04-27 13:45:41 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 13:49:56 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:49:59 | INFO | Fetching page=1 delay=2.51s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:50:00 | INFO | Parsed page=1 products_found=24
+2026-04-27 13:50:02 | INFO | Fetching page=2 delay=2.42s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:50:03 | INFO | Parsed page=2 products_found=24
+2026-04-27 13:50:08 | INFO | Fetching page=3 delay=4.26s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:50:08 | INFO | Parsed page=3 products_found=24
+2026-04-27 13:50:08 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 13:51:06 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 13:51:11 | INFO | Fetching page=1 delay=4.35s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 13:51:12 | INFO | Parsed page=1 products_found=24
+2026-04-27 13:51:14 | INFO | Fetching page=2 delay=2.19s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 13:51:15 | INFO | Parsed page=2 products_found=24
+2026-04-27 13:51:18 | INFO | Fetching page=3 delay=3.18s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 13:51:19 | INFO | Parsed page=3 products_found=24
+2026-04-27 13:51:19 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:08:47 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:08:51 | INFO | Fetching page=1 delay=3.17s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:08:53 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:08:55 | INFO | Fetching page=2 delay=2.20s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:08:56 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:08:59 | INFO | Fetching page=3 delay=3.35s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:09:00 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:09:00 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:09:00 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:09:03 | INFO | Fetching Amazon page=1 delay=2.59s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:09:04 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.05s
+2026-04-27 14:09:07 | INFO | Parsed Amazon page=1 products_found=0
+2026-04-27 14:09:09 | INFO | Fetching Amazon page=2 delay=2.17s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:09:11 | INFO | Parsed Amazon page=2 products_found=0
+2026-04-27 14:09:15 | INFO | Fetching Amazon page=3 delay=4.08s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:09:17 | INFO | Parsed Amazon page=3 products_found=0
+2026-04-27 14:09:17 | WARNING | No Amazon products parsed on page=3; markup may have changed or blocked.
+2026-04-27 14:09:21 | INFO | Fetching Amazon page=4 delay=3.67s url=https://www.amazon.in/s?k=mobiles&page=4
+2026-04-27 14:09:22 | INFO | Parsed Amazon page=4 products_found=0
+2026-04-27 14:09:22 | WARNING | No Amazon products parsed on page=4; markup may have changed or blocked.
+2026-04-27 14:09:26 | INFO | Fetching Amazon page=5 delay=3.75s url=https://www.amazon.in/s?k=mobiles&page=5
+2026-04-27 14:09:28 | INFO | Parsed Amazon page=5 products_found=0
+2026-04-27 14:09:28 | WARNING | No Amazon products parsed on page=5; markup may have changed or blocked.
+2026-04-27 14:09:31 | INFO | Fetching Amazon page=6 delay=3.43s url=https://www.amazon.in/s?k=mobiles&page=6
+2026-04-27 14:09:33 | INFO | Parsed Amazon page=6 products_found=0
+2026-04-27 14:09:33 | WARNING | No Amazon products parsed on page=6; markup may have changed or blocked.
+2026-04-27 14:09:36 | INFO | Fetching Amazon page=7 delay=2.38s url=https://www.amazon.in/s?k=mobiles&page=7
+2026-04-27 14:09:38 | INFO | Parsed Amazon page=7 products_found=0
+2026-04-27 14:09:41 | INFO | Fetching Amazon page=8 delay=3.63s url=https://www.amazon.in/s?k=mobiles&page=8
+2026-04-27 14:09:43 | INFO | Parsed Amazon page=8 products_found=0
+2026-04-27 14:09:43 | WARNING | No Amazon products parsed on page=8; markup may have changed or blocked.
+2026-04-27 14:09:47 | INFO | Fetching Amazon page=9 delay=3.81s url=https://www.amazon.in/s?k=mobiles&page=9
+2026-04-27 14:09:49 | INFO | Parsed Amazon page=9 products_found=0
+2026-04-27 14:09:49 | WARNING | No Amazon products parsed on page=9; markup may have changed or blocked.
+2026-04-27 14:09:53 | INFO | Fetching Amazon page=10 delay=4.02s url=https://www.amazon.in/s?k=mobiles&page=10
+2026-04-27 14:09:54 | INFO | Parsed Amazon page=10 products_found=0
+2026-04-27 14:09:54 | WARNING | No Amazon products parsed on page=10; markup may have changed or blocked.
+2026-04-27 14:09:54 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=0
+2026-04-27 14:09:54 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=50
+2026-04-27 14:10:20 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:10:23 | INFO | Fetching page=1 delay=2.44s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:10:24 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:10:28 | INFO | Fetching page=2 delay=4.14s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:10:29 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:10:33 | INFO | Fetching page=3 delay=4.21s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:10:34 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:10:34 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:10:34 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:10:37 | INFO | Fetching Amazon page=1 delay=2.81s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:10:38 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.15s
+2026-04-27 14:10:41 | INFO | Parsed Amazon page=1 products_found=0
+2026-04-27 14:10:44 | INFO | Fetching Amazon page=2 delay=2.68s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:10:45 | INFO | Parsed Amazon page=2 products_found=0
+2026-04-27 14:10:45 | WARNING | No Amazon products parsed on page=2; markup may have changed or blocked.
+2026-04-27 14:10:48 | INFO | Fetching Amazon page=3 delay=2.27s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:10:49 | INFO | Parsed Amazon page=3 products_found=0
+2026-04-27 14:10:49 | WARNING | No Amazon products parsed on page=3; markup may have changed or blocked.
+2026-04-27 14:10:53 | INFO | Fetching Amazon page=4 delay=3.13s url=https://www.amazon.in/s?k=mobiles&page=4
+2026-04-27 14:10:54 | INFO | Parsed Amazon page=4 products_found=0
+2026-04-27 14:10:54 | WARNING | No Amazon products parsed on page=4; markup may have changed or blocked.
+2026-04-27 14:10:59 | INFO | Fetching Amazon page=5 delay=4.51s url=https://www.amazon.in/s?k=mobiles&page=5
+2026-04-27 14:11:00 | INFO | Parsed Amazon page=5 products_found=0
+2026-04-27 14:11:00 | WARNING | No Amazon products parsed on page=5; markup may have changed or blocked.
+2026-04-27 14:11:03 | INFO | Fetching Amazon page=6 delay=2.49s url=https://www.amazon.in/s?k=mobiles&page=6
+2026-04-27 14:11:04 | INFO | Parsed Amazon page=6 products_found=0
+2026-04-27 14:11:08 | INFO | Fetching Amazon page=7 delay=3.40s url=https://www.amazon.in/s?k=mobiles&page=7
+2026-04-27 14:11:10 | INFO | Parsed Amazon page=7 products_found=0
+2026-04-27 14:11:10 | WARNING | No Amazon products parsed on page=7; markup may have changed or blocked.
+2026-04-27 14:11:13 | INFO | Fetching Amazon page=8 delay=2.86s url=https://www.amazon.in/s?k=mobiles&page=8
+2026-04-27 14:11:14 | INFO | Parsed Amazon page=8 products_found=0
+2026-04-27 14:11:14 | WARNING | No Amazon products parsed on page=8; markup may have changed or blocked.
+2026-04-27 14:11:17 | INFO | Fetching Amazon page=9 delay=2.70s url=https://www.amazon.in/s?k=mobiles&page=9
+2026-04-27 14:11:18 | INFO | Parsed Amazon page=9 products_found=0
+2026-04-27 14:11:23 | INFO | Fetching Amazon page=10 delay=4.49s url=https://www.amazon.in/s?k=mobiles&page=10
+2026-04-27 14:11:24 | INFO | Parsed Amazon page=10 products_found=0
+2026-04-27 14:11:24 | WARNING | No Amazon products parsed on page=10; markup may have changed or blocked.
+2026-04-27 14:11:24 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=0
+2026-04-27 14:11:24 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=50
+2026-04-27 14:14:18 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:14:21 | INFO | Fetching page=1 delay=3.20s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:14:24 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:14:27 | INFO | Fetching page=2 delay=2.52s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:14:28 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:14:32 | INFO | Fetching page=3 delay=4.53s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:14:33 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:14:33 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:14:33 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:14:36 | INFO | Fetching Amazon page=1 delay=2.36s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:14:38 | INFO | Parsed Amazon page=1 products_found=16
+2026-04-27 14:14:41 | INFO | Fetching Amazon page=2 delay=2.47s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:14:42 | INFO | Parsed Amazon page=2 products_found=22
+2026-04-27 14:14:47 | INFO | Fetching Amazon page=3 delay=4.83s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:14:49 | INFO | Parsed Amazon page=3 products_found=20
+2026-04-27 14:14:49 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 14:14:49 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100
+2026-04-27 14:15:49 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:15:53 | INFO | Fetching page=1 delay=3.89s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:15:54 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:15:59 | INFO | Fetching page=2 delay=4.54s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:16:00 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:16:03 | INFO | Fetching page=3 delay=3.52s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:16:04 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:16:04 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:16:04 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:16:08 | INFO | Fetching Amazon page=1 delay=3.98s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:16:09 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.26s
+2026-04-27 14:16:12 | INFO | Parsed Amazon page=1 products_found=22
+2026-04-27 14:16:16 | INFO | Fetching Amazon page=2 delay=4.50s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:16:17 | INFO | Parsed Amazon page=2 products_found=21
+2026-04-27 14:16:21 | INFO | Fetching Amazon page=3 delay=3.26s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:16:22 | INFO | Parsed Amazon page=3 products_found=22
+2026-04-27 14:16:22 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 14:16:22 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100
+2026-04-27 14:23:40 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:23:43 | INFO | Fetching page=1 delay=3.20s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:23:44 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:23:49 | INFO | Fetching page=2 delay=4.16s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:23:49 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:23:54 | INFO | Fetching page=3 delay=4.45s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:23:55 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:23:55 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:23:55 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:23:58 | INFO | Fetching Amazon page=1 delay=3.34s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:24:00 | INFO | Parsed Amazon page=1 products_found=16
+2026-04-27 14:24:03 | INFO | Fetching Amazon page=2 delay=2.72s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:24:05 | INFO | Parsed Amazon page=2 products_found=21
+2026-04-27 14:24:09 | INFO | Fetching Amazon page=3 delay=4.61s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:24:11 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-27 14:24:11 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 14:24:11 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100
+2026-04-27 14:51:37 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:51:41 | INFO | Fetching page=1 delay=4.17s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:51:44 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:51:46 | INFO | Fetching page=2 delay=2.04s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:51:47 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:51:52 | INFO | Fetching page=3 delay=4.87s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:51:53 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:51:53 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:51:53 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:51:56 | INFO | Fetching Amazon page=1 delay=2.82s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:51:57 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.35s
+2026-04-27 14:52:00 | INFO | Parsed Amazon page=1 products_found=22
+2026-04-27 14:52:03 | INFO | Fetching Amazon page=2 delay=2.66s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:52:04 | INFO | Parsed Amazon page=2 products_found=22
+2026-04-27 14:52:08 | INFO | Fetching Amazon page=3 delay=3.93s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:52:10 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-27 14:52:10 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 14:52:10 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100
+2026-04-27 14:52:44 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 14:52:48 | INFO | Fetching page=1 delay=3.88s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 14:52:50 | INFO | Parsed page=1 products_found=24
+2026-04-27 14:52:52 | INFO | Fetching page=2 delay=2.62s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 14:52:54 | INFO | Parsed page=2 products_found=24
+2026-04-27 14:52:57 | INFO | Fetching page=3 delay=3.55s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 14:52:58 | INFO | Parsed page=3 products_found=24
+2026-04-27 14:52:58 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 14:52:58 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 14:53:01 | INFO | Fetching Amazon page=1 delay=2.47s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 14:53:02 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.27s
+2026-04-27 14:53:06 | INFO | Parsed Amazon page=1 products_found=22
+2026-04-27 14:53:08 | INFO | Fetching Amazon page=2 delay=2.65s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 14:53:10 | INFO | Parsed Amazon page=2 products_found=22
+2026-04-27 14:53:14 | INFO | Fetching Amazon page=3 delay=4.12s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 14:53:16 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-27 14:53:16 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 14:53:16 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100
+2026-04-27 15:15:28 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-27 15:15:32 | INFO | Fetching page=1 delay=3.29s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-27 15:15:51 | INFO | Parsed page=1 products_found=24
+2026-04-27 15:15:55 | INFO | Fetching page=2 delay=4.12s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-27 15:15:57 | INFO | Parsed page=2 products_found=24
+2026-04-27 15:16:00 | INFO | Fetching page=3 delay=3.35s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-27 15:16:01 | INFO | Parsed page=3 products_found=24
+2026-04-27 15:16:01 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-27.json count=50
+2026-04-27 15:16:01 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-27 15:16:04 | INFO | Fetching Amazon page=1 delay=2.43s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-27 15:16:04 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.09s
+2026-04-27 15:16:07 | INFO | Parsed Amazon page=1 products_found=22
+2026-04-27 15:16:11 | INFO | Fetching Amazon page=2 delay=4.03s url=https://www.amazon.in/s?k=mobiles&page=2
+2026-04-27 15:16:13 | INFO | Parsed Amazon page=2 products_found=21
+2026-04-27 15:16:16 | INFO | Fetching Amazon page=3 delay=3.11s url=https://www.amazon.in/s?k=mobiles&page=3
+2026-04-27 15:16:18 | INFO | Parsed Amazon page=3 products_found=21
+2026-04-27 15:16:18 | INFO | Completed Amazon scrape. saved=raw_data/amazon_2026-04-27.json count=50
+2026-04-27 15:16:18 | INFO | Saved combined output. saved=raw_data/mobiles_2026-04-27.json count=100

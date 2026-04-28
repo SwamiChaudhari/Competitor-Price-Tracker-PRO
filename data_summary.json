@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "date": "2026-04-27",
+  "source_file": "raw_data\\flipkart_2026-04-27.json",
+  "product_count": 50,
+  "checks": {
+    "count_50_plus": {
+      "pass": true,
+      "value": 50,
+      "min_required": 50
+    },
+    "no_empty_prices": {
+      "pass": true,
+      "bad_count": 0
+    },
+    "discounts_realistic": {
+      "pass": true,
+      "bad_count": 0,
+      "range": [
+        0,
+        90
+      ]
+    }
+  },
+  "issues_sample": []
+}

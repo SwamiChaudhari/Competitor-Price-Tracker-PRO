@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-27",
+  "yesterday": "2026-04-26",
+  "alert_count": 62,
+  "alerts_top": [
+    {
+      "product_name": "shivansh yutopia yu5050, 4gb ram and 32gb rom, 21mp dual rear camera, fingerprint and 4g support, grephite, 5.2 in display",
+      "source": "amazon",
+      "scrape_date": "2026-04-27",
+      "mrp": 10990.0,
+      "sale_price": 4300.0,
+      "discount_pct": 60.87,
+      "yesterday_sale_price": null,
+      "price_change_pct": null,
+      "url": "https://www.amazon.in/SHIVANSH-YUTOPIA-YU5050-Fingerprint-Grephite/dp/B0GBWFQS3P/ref=sr_1_46?dib=eyJ2IjoiMSJ9.51KSI7zAJ2nY16N2OzOgFpirpGCV_wTyLzfHCEy13q3BsQwKiD7aTrrJ03NKLGKD-07i7H_488dt3-Qcf76q9hfJO7JBPVI05uufRNOqapL2W6r_O2v0Es0ONFbPCYFLlxyTbFkTsSRKJrWWtzLT_mJtW-TZZ4twi1K1OPMH4Qim3NTumfIBE-N0z5aYl8SwJLRviDyRzIOF9CxZdlujBCEUKGe7vUY4Wx7pJTbQG60.X8MfNG-p2ld-1d0X9qZ-eCuIThs1ppSO1G7IPwsVd-Q&dib_tag=se&keywords=mobiles&qid=1777280049&sr=8-46",
+      "reason": "discount"
+    },
+    {
+      "product_name": "shivansh yutopia yu5050, 4gb ram and 32gb rom, 21mp dual rear camera, fingerprint and 4g support, grephite, 5.2 in display",
+      "source": "mobiles",
+      "scrape_date": "2026-04-27",
+      "mrp": 10990.0,
+      "sale_price": 4300.0,
+      "discount_pct": 60.87,
+      "yesterday_sale_price": null,
+      "price_change_pct": null,
+      "url": "https://www.amazon.in/SHIVANSH-YUTOPIA-YU5050-Fingerprint-Grephite/dp/B0GBWFQS3P/ref=sr_1_46?dib=eyJ2IjoiMSJ9.51KSI7zAJ2nY16N2OzOgFpirpGCV_wTyLzfHCEy13q3BsQwKiD7aTrrJ03NKLGKD-07i7H_488dt3-Qcf76q9hfJO7JBPVI05uufRNOqapL2W6r_O2v0Es0ONFbPCYFLlxyTbFkTsSRKJrWWtzLT_mJtW-TZZ4twi1K1OPMH4Qim3NTumfIBE-N0z5aYl8SwJLRviDyRzIOF9CxZdlujBCEUKGe7vUY4Wx7pJTbQG60.X8MfNG-p2ld-1d0X9qZ-eCuIThs1ppSO1G7IPwsVd-Q&dib_tag=se&keywords=mobiles&qid=1777280049&sr=8-46",
+      "reason": "discount"
+    },
+    {
+      "product_name": "jio bharat v4 jbv191m2 4g upi phone",
+      "source": "flipkart",
+      "scrape_date": "2026-04-27",
+      "mrp": 1799.0,
+      "sale_price": 799.0,
+      "discount_pct": 55.59,
+      "yesterday_sale_price": null,
+      "price_change_pct": null,
+      "url": "https://www.flipkart.com/jio-bharat-v4-jbv191m2-4g-upi-phone/p/itmda060b143ed50?pid=MOBHJ5P77NYVDVJZ&lid=LSTMOBHJ5P77NYVDVJZHRQ2RN&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_15&otracker=browse&fm=organic&iid=44e36cad-529f-45e6-99b9-ce3c41e5b5b1.MOBHJ5P77NYVDVJZ.SEARCH&ppt=None&ppn=None&ssid=8dpa6icoo00000001777280024624&ov_redirect=true",
+      "reason": "discount"
+    },
+    {
+      "product_name": "jio bharat v4 jbv191m2 4g upi phone",
+      "source": "mobiles",
+      "scrape_date": "2026-04-27",
+      "mrp": 1799.0,
+      "sale_price": 799.0,
+      "discount_pct": 55.59,
+      "yesterday_sale_price": null,
+      "price_change_pct": null,
+      "url": "https://www.flipkart.com/jio-bharat-v4-jbv191m2-4g-upi-phone/p/itmda060b143ed50?pid=MOBHJ5P77NYVDVJZ&lid=LSTMOBHJ5P77NYVDVJZHRQ2RN&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_15&otracker=browse&fm=organic&iid=44e36cad-529f-45e6-99b9-ce3c41e5b5b1.MOBHJ5P77NYVDVJZ.SEARCH&ppt=None&ppn=None&ssid=8dpa6icoo00000001777280024624&ov_redirect=true",
+      "reason": "discount"
+    },
+    {
+      "product_name": "realme narzo 100 lite 5g (frost silver,4gb+128gb) | 7000mah titan battery | 4 years, zero lag | 144 hz ultra smooth display | 6 nm octa-core 5g chipset | color pop design | vc cooling",
+      "source": "amazon",
+      "scrape_date": "2026-04-27",
+      "mrp": 27999.0,
+      "sale_price": 14499.0,
+      "discount_pct": 48.22,
+      "yesterday_sale_price": null,
+      "price_change_pct": null,
+      "url": "https://www.amazon.in/realme-7000mAh-Battery-Display-Octa-core/dp/B0GTRHJYYF/ref=sr_1_4?dib=eyJ2IjoiMSJ9.txwDAkHkanjZZP5cQ4GhqRQNqYu15oY8dn5FhAoJL4chfIaVw310j-njym_9ZcYqiZltQkFvd8bt0utpd6zcNsNT-4bDwPngYQWR4O_m9z2qWfmPBk_Tk4ixKxdPUkmZuvQu7RGjjuMRfPAO9qSBh6XA9hLqs3-qe7n6dnOqYodK3_foYaHV3fuKOpIeyuObJUN4eGXamBNxezb-DNsdFytJPtu2WqGS-llohhkJ7d8.fyzGsPdVHjID88uJkRv6dFp7XwjIDzfrdGs-hMqZNzM&dib_tag=se&keywords=mobiles&qid=1777280039&sr=8-4",
+      "reason": "discount"
+    }
+  ],
+  "error": "RuntimeError(\"Missing email config keys: ['GMAIL_SMTP_USER', 'GMAIL_APP_PASSWORD', 'ALERT_EMAIL_TO', 'ALERT_EMAIL_FROM']. Add them to config.py or set env vars.\")"
+}

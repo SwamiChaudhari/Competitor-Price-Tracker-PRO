@@ -1,0 +1,39 @@
+2026-04-28 16:21:31,609 | INFO | --- Pipeline Started ---
+2026-04-28 16:21:31,609 | INFO | Starting scraper.py...
+2026-04-28 16:21:44,832 | INFO | --- Pipeline Started ---
+2026-04-28 16:21:44,832 | INFO | Starting scraper.py...
+2026-04-28 16:22:10,228 | ERROR | Error in scraper.py: 2026-04-28 16:21:45 | INFO | Starting scrape. listing_url=https://www.flipkart.com/mobiles/pr?sid=tyy,4io target_count=50
+2026-04-28 16:21:49 | INFO | Fetching page=1 delay=4.03s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=1
+2026-04-28 16:21:52 | INFO | Parsed page=1 products_found=24
+2026-04-28 16:21:56 | INFO | Fetching page=2 delay=4.31s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=2
+2026-04-28 16:21:58 | INFO | Parsed page=2 products_found=24
+2026-04-28 16:22:02 | INFO | Fetching page=3 delay=3.98s url=https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&page=3
+2026-04-28 16:22:03 | INFO | Parsed page=3 products_found=24
+2026-04-28 16:22:03 | INFO | Completed scrape. saved=raw_data/flipkart_2026-04-28.json count=50
+2026-04-28 16:22:03 | INFO | Starting Amazon scrape. listing_url=https://www.amazon.in/s?k=mobiles target_count=50
+2026-04-28 16:22:06 | INFO | Fetching Amazon page=1 delay=2.37s url=https://www.amazon.in/s?k=mobiles&page=1
+2026-04-28 16:22:07 | WARNING | Request failed (attempt 1/4). url=https://www.amazon.in/s?k=mobiles&page=1 err=HTTPError('HTTP 503. Body snippet: <html> <head> <title>503 - Service Unavailable Error</title> </head> <body bgcolor="#FFFFFF" text="#000000">  <!--         To discuss automated access to Amazon data please contact api-services-support@amazon.com.         For information ab'). Backing off 1.18s
+2026-04-28 16:22:09 | INFO | Parsed Amazon page=1 products_found=20
+
+2026-04-28 16:22:13,213 | INFO | Successfully finished scraper.py
+2026-04-28 16:22:13,213 | INFO | Starting etl_pipeline.py...
+2026-04-28 16:22:13,427 | INFO | Successfully finished etl_pipeline.py
+2026-04-28 16:22:13,427 | INFO | Starting alert_system.py...
+2026-04-28 16:22:17,244 | INFO | Successfully finished alert_system.py
+2026-04-28 16:22:17,244 | INFO | --- Pipeline Finished ---
+2026-04-28 16:23:55,776 | INFO | --- Pipeline Started ---
+2026-04-28 16:23:55,776 | INFO | Starting scraper.py...
+2026-04-28 16:24:30,556 | INFO | Successfully finished scraper.py
+2026-04-28 16:24:30,556 | INFO | Starting etl_pipeline.py...
+2026-04-28 16:24:30,726 | INFO | Successfully finished etl_pipeline.py
+2026-04-28 16:24:30,726 | INFO | Starting alert_system.py...
+2026-04-28 16:24:35,027 | INFO | Successfully finished alert_system.py
+2026-04-28 16:24:35,036 | INFO | --- Pipeline Finished ---
+2026-04-28 16:25:07,350 | INFO | --- Pipeline Started ---
+2026-04-28 16:25:07,350 | INFO | Starting scraper.py...
+2026-04-28 16:25:45,322 | INFO | Successfully finished scraper.py
+2026-04-28 16:25:45,322 | INFO | Starting etl_pipeline.py...
+2026-04-28 16:25:45,512 | INFO | Successfully finished etl_pipeline.py
+2026-04-28 16:25:45,520 | INFO | Starting alert_system.py...
+2026-04-28 16:25:49,620 | INFO | Successfully finished alert_system.py
+2026-04-28 16:25:49,620 | INFO | --- Pipeline Finished ---

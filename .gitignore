@@ -1,0 +1,9 @@
+prices.db
+logs/
+__pycache__/
+.env
+
+*.db
+*.db-shm
+*.db-wal
+

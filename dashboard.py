@@ -886,14 +886,14 @@ def render_alerts(df: pd.DataFrame) -> None:
                 st.markdown(
                     f"""
                     <div style="display:flex;align-items:center;justify-content:space-between;
-                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#3d1f1f;
-                        border-radius:8px;border-left:3px solid #ff7b72;">
+                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#1d4ed8;
+                        border-radius:8px;border-left:3px solid #ffffff;">
                         <div>
-                            <div style="font-size:0.82rem;font-weight:600;color:#ff7b72;">{r['product_name'][:45]}…</div>
-                            <div style="font-size:0.7rem;color:#8b949e;">{r['source'].capitalize()} · {r['category']}</div>
+                            <div style="font-size:0.82rem;font-weight:600;color:#ffffff;">{r['product_name'][:45]}…</div>
+                            <div style="font-size:0.7rem;color:#ffffff;">{r['source'].capitalize()} · {r['category']}</div>
                         </div>
                         <div style="text-align:right;">
-                            <div style="font-size:0.9rem;font-weight:700;color:#ff7b72;">↓ {r['discount_pct']:.1f}%</div>
+                            <div style="font-size:0.9rem;font-weight:700;color:#ff8c42;">↓ {r['discount_pct']:.1f}%</div>
                             <div style="font-size:0.72rem;color:#8b949e;">₹{r['current_price']:,.0f}</div>
                         </div>
                     </div>

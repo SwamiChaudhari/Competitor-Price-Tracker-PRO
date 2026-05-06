@@ -4,22 +4,25 @@ import argparse
 import json
 import os
 import smtplib
-import sqlite3
 from dataclasses import asdict, dataclass
 from datetime import date, timedelta
 from email.message import EmailMessage
 from typing import Any, Dict, List, Optional
 
+import pandas as pd
+import streamlit as st
+from streamlit_gsheets import GSheetsConnection
 
-def _today() -> str:
+
+def today_str() -> str:
     return date.today().isoformat()
 
 
-def _yesterday(today: str) -> str:
+def yesterday_str(today: str) -> str:
     return (date.fromisoformat(today) - timedelta(days=1)).isoformat()
 
 
-def _money_inr(x: Optional[float]) -> str:
+def money_inr(x: Optional[float]) -> str:
     if x is None:
         return "-"
     try:
@@ -28,7 +31,7 @@ def _money_inr(x: Optional[float]) -> str:
         return "-"
 
 
-def _pct(x: Optional[float]) -> str:
+def pct(x: Optional[float]) -> str:
     if x is None:
         return "-"
     try:
@@ -46,12 +49,12 @@ class Alert:
     sale_price: float
     discount_pct: float
     yesterday_sale_price: Optional[float]
-    price_change_pct: Optional[float]  # negative => dropped (today lower than yesterday)
+    price_change_pct: Optional[float]
     url: Optional[str]
-    reason: str  # "discount" | "price_drop"
+    reason: str
 
 
-def _compute_price_change_pct(yesterday_sale: Optional[float], today_sale: float) -> Optional[float]:
+def compute_price_change_pct(yesterday_sale: Optional[float], today_sale: float) -> Optional[float]:
     if yesterday_sale is None:
         return None
     try:
@@ -61,42 +64,68 @@ def _compute_price_change_pct(yesterday_sale: Optional[float], today_sale: float
         return None
     if y <= 0:
         return None
-    # Negative => price dropped
     return round(((t - y) / y) * 100.0, 2)
 
 
-def _load_candidates(conn: sqlite3.Connection, *, today: str, yesterday: str) -> List[Dict[str, Any]]:
-    conn.row_factory = sqlite3.Row
-    cur = conn.execute(
-        """
-        SELECT
-          t.product_name,
-          t.source,
-          t.scrape_date,
-          t.mrp,
-          t.sale_price,
-          t.discount_pct,
-          t.url,
-          y.sale_price AS yesterday_sale_price
-        FROM prices t
-        LEFT JOIN prices y
-          ON y.product_name = t.product_name
-         AND y.source = t.source
-         AND y.scrape_date = ?
-        WHERE t.scrape_date = ?
-        """.strip(),
-        (yesterday, today),
-    )
-    return [dict(r) for r in cur.fetchall()]
+@st.cache_data(ttl=60, show_spinner=False)
+def load_sheet_df(worksheet: str = "prices") -> pd.DataFrame:
+    conn = st.connection("gsheets", type=GSheetsConnection)
+    df = conn.read(worksheet=worksheet)
+    if df is None or df.empty:
+        return pd.DataFrame(
+            columns=[
+                "product_name",
+                "source",
+                "scrape_date",
+                "mrp",
+                "sale_price",
+                "discount_pct",
+                "price_change_pct",
+                "url",
+                "alert_status",
+            ]
+        )
+
+    for col in ["mrp", "sale_price", "discount_pct", "price_change_pct"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    if "scrape_date" in df.columns:
+        df["scrape_date"] = pd.to_datetime(df["scrape_date"], errors="coerce")
+
+    for col in ["product_name", "source", "url", "alert_status"]:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.strip()
+
+    return df
 
 
-def _build_alerts(
+def load_candidates_from_gsheets(today: str, yesterday: str, worksheet: str = "prices") -> List[Dict[str, Any]]:
+    df = load_sheet_df(worksheet=worksheet)
+    if df.empty or "scrape_date" not in df.columns:
+        return []
+
+    today_df = df[df["scrape_date"].dt.date.astype(str) == today].copy()
+    if today_df.empty:
+        return []
+
+    y_df = df[df["scrape_date"].dt.date.astype(str) == yesterday][
+        ["product_name", "source", "sale_price"]
+    ].copy()
+    y_df = y_df.rename(columns={"sale_price": "yesterday_sale_price"})
+
+    merged = today_df.merge(y_df, on=["product_name", "source"], how="left")
+    return merged.to_dict("records")
+
+
+def build_alerts(
     rows: List[Dict[str, Any]],
     *,
     discount_threshold_pct: float,
     price_drop_threshold_pct: float,
 ) -> List[Alert]:
     alerts: List[Alert] = []
+
     for r in rows:
         try:
             discount_pct = float(r.get("discount_pct") or 0.0)
@@ -106,7 +135,7 @@ def _build_alerts(
             continue
 
         y_sale = r.get("yesterday_sale_price")
-        change_pct = _compute_price_change_pct(y_sale, sale_price)
+        change_pct = compute_price_change_pct(y_sale, sale_price)
 
         reason: Optional[str] = None
         if discount_pct > discount_threshold_pct:
@@ -125,70 +154,56 @@ def _build_alerts(
                 mrp=mrp,
                 sale_price=sale_price,
                 discount_pct=discount_pct,
-                yesterday_sale_price=float(y_sale) if y_sale is not None else None,
+                yesterday_sale_price=float(y_sale) if y_sale is not None and y_sale != "" else None,
                 price_change_pct=change_pct,
                 url=(str(r.get("url")).strip() if r.get("url") else None),
                 reason=reason,
             )
         )
 
-    def sort_key(a: Alert) -> tuple:
-        # Prefer biggest day-over-day drops (most negative), then biggest discount.
-        change = a.price_change_pct
-        change_rank = change if change is not None else 9999.0
-        return (change_rank, -a.discount_pct, -a.mrp)
-
-    alerts.sort(key=sort_key)
+    alerts.sort(
+        key=lambda a: (
+            a.price_change_pct if a.price_change_pct is not None else 9999.0,
+            -a.discount_pct,
+            -a.mrp,
+        )
+    )
     return alerts
 
 
-def _template_line(a: Alert) -> str:
-    # Template requested: "🚨 iPhone 15 dropped 6.2% to ₹79,999"
+def template_line(a: Alert) -> str:
     if a.price_change_pct is not None and a.price_change_pct < 0:
         dropped = abs(a.price_change_pct)
-        return f"🚨 {a.product_name} dropped {dropped:.1f}% to {_money_inr(a.sale_price)}"
-    return f"🚨 {a.product_name} now {_money_inr(a.sale_price)} ({a.discount_pct:.1f}% off)"
+        return f"🚨 {a.product_name} dropped {dropped:.1f}% to {money_inr(a.sale_price)}"
+    return f"🚨 {a.product_name} now {money_inr(a.sale_price)} ({a.discount_pct:.1f}% off)"
 
 
-def _console_safe(text: str) -> str:
-    """
-    Windows terminals may not support emoji/unicode in the active codepage.
-    Keep console output safe while preserving the emoji for email.
-    """
-    # Replace the siren emoji first (common failure point).
-    text = text.replace("🚨", "[ALERT]")
-    try:
-        # Encode to stdout encoding to validate; replace undecodable chars.
-        enc = getattr(getattr(__import__("sys"), "stdout"), "encoding", None) or "utf-8"
-        return text.encode(enc, errors="replace").decode(enc, errors="replace")
-    except Exception:
-        return text.encode("ascii", errors="replace").decode("ascii", errors="replace")
-
-
-def _render_html(alerts: List[Alert], *, top_n: int) -> str:
+def render_html(alerts: List[Alert], *, top_n: int) -> str:
     show = alerts[:top_n]
+
     rows_html = "\n".join(
         [
             "<tr>"
             f"<td>{i}</td>"
             f"<td>{a.product_name}</td>"
             f"<td>{a.source}</td>"
-            f"<td>{_money_inr(a.mrp)}</td>"
-            f"<td><b>{_money_inr(a.sale_price)}</b></td>"
-            f"<td>{_pct(a.discount_pct)}</td>"
-            f"<td>{_pct(a.price_change_pct)}</td>"
+            f"<td>{money_inr(a.mrp)}</td>"
+            f"<td><b>{money_inr(a.sale_price)}</b></td>"
+            f"<td>{pct(a.discount_pct)}</td>"
+            f"<td>{pct(a.price_change_pct)}</td>"
             f"<td>{(f'<a href=\"{a.url}\">link</a>' if a.url else '-')}</td>"
             "</tr>"
             for i, a in enumerate(show, 1)
         ]
     )
 
-    return f"""\
-<!doctype html>
+    lead = template_line(show[0]) if show else "No alerts today."
+
+    return f"""<!doctype html>
 <html>
   <body style="font-family: Arial, sans-serif;">
-    <h2>Price Tracker Alerts ({_today()})</h2>
-    <p>{_template_line(show[0]) if show else "No alerts today."}</p>
+    <h2>Price Tracker Alerts ({today_str()})</h2>
+    <p>{lead}</p>
     <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
       <thead>
         <tr>
@@ -207,52 +222,35 @@ def _render_html(alerts: List[Alert], *, top_n: int) -> str:
       </tbody>
     </table>
   </body>
-</html>
-"""
+</html>"""
 
 
-def _load_email_config() -> Dict[str, str]:
-    """
-    Reads from config.py if present; falls back to env vars.
-    Do NOT hardcode secrets.
-    """
+def load_email_config() -> Dict[str, str]:
     cfg: Dict[str, str] = {}
 
     try:
         import config as project_config  # type: ignore
 
-        for k in [
-            "GMAIL_SMTP_USER",
-            "GMAIL_APP_PASSWORD",
-            "ALERT_EMAIL_TO",
-            "ALERT_EMAIL_FROM",
-        ]:
+        for k in ["GMAIL_SMTP_USER", "GMAIL_APP_PASSWORD", "ALERT_EMAIL_TO", "ALERT_EMAIL_FROM"]:
             v = getattr(project_config, k, None)
             if isinstance(v, str) and v.strip():
                 cfg[k] = v.strip()
     except Exception:
         pass
 
-    env_map = {
-        "GMAIL_SMTP_USER": "GMAIL_SMTP_USER",
-        "GMAIL_APP_PASSWORD": "GMAIL_APP_PASSWORD",
-        "ALERT_EMAIL_TO": "ALERT_EMAIL_TO",
-        "ALERT_EMAIL_FROM": "ALERT_EMAIL_FROM",
-    }
-    for k, env_k in env_map.items():
+    for k in ["GMAIL_SMTP_USER", "GMAIL_APP_PASSWORD", "ALERT_EMAIL_TO", "ALERT_EMAIL_FROM"]:
         if k not in cfg:
-            v = os.environ.get(env_k, "").strip()
+            v = os.environ.get(k, "").strip()
             if v:
                 cfg[k] = v
 
-    # Sensible defaults
     if "ALERT_EMAIL_FROM" not in cfg and "GMAIL_SMTP_USER" in cfg:
         cfg["ALERT_EMAIL_FROM"] = cfg["GMAIL_SMTP_USER"]
 
     return cfg
 
 
-def _send_email(*, subject: str, html_body: str, cfg: Dict[str, str]) -> None:
+def send_email(*, subject: str, html_body: str, cfg: Dict[str, str]) -> None:
     missing = [k for k in ["GMAIL_SMTP_USER", "GMAIL_APP_PASSWORD", "ALERT_EMAIL_TO", "ALERT_EMAIL_FROM"] if k not in cfg]
     if missing:
         raise RuntimeError(f"Missing email config keys: {missing}. Add them to config.py or set env vars.")
@@ -270,29 +268,26 @@ def _send_email(*, subject: str, html_body: str, cfg: Dict[str, str]) -> None:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Alert system: email HOT deals, fallback to alerts.json")
-    parser.add_argument("--db", default="prices.db", help="SQLite DB path (default: prices.db)")
-    parser.add_argument("--output", default="alerts.json", help="Fallback JSON path (default: alerts.json)")
-    parser.add_argument("--top", type=int, default=5, help="Include top N alerts in HTML table (default: 5)")
-    parser.add_argument("--discount-threshold", type=float, default=20.0, help="Alert if discount_pct > this (default: 20)")
-    parser.add_argument(
-        "--price-drop-threshold",
-        type=float,
-        default=-5.0,
-        help="Alert if day-over-day price_change_pct < this (negative means drop). Default: -5",
-    )
+    parser = argparse.ArgumentParser(description="Alert system: email HOT deals from Google Sheets")
+    parser.add_argument("--worksheet", default="prices", help="Google Sheet worksheet name")
+    parser.add_argument("--output", default="alerts.json", help="Fallback JSON path")
+    parser.add_argument("--top", type=int, default=5, help="Include top N alerts in HTML table")
+    parser.add_argument("--discount-threshold", type=float, default=20.0, help="Alert if discount_pct > this")
+    parser.add_argument("--price-drop-threshold", type=float, default=-5.0, help="Alert if day-over-day price_change_pct < this")
     args = parser.parse_args(argv)
 
-    today = _today()
-    yesterday = _yesterday(today)
+    today = today_str()
+    yesterday = yesterday_str(today)
 
-    conn = sqlite3.connect(args.db)
     try:
-        rows = _load_candidates(conn, today=today, yesterday=yesterday)
-    finally:
-        conn.close()
+        rows = load_candidates_from_gsheets(today, yesterday, worksheet=args.worksheet)
+    except Exception as e:
+        with open(args.output, "w", encoding="utf-8") as f:
+            json.dump({"date": today, "error": repr(e)}, f, ensure_ascii=False, indent=2)
+        print(f"[ALERT] Google Sheets read failed ({e!r}). Saved fallback: {args.output}")
+        return 2
 
-    alerts = _build_alerts(
+    alerts = build_alerts(
         rows,
         discount_threshold_pct=args.discount_threshold,
         price_drop_threshold_pct=args.price_drop_threshold,
@@ -300,14 +295,14 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     print(f"[ALERT] date={today} candidates={len(rows)} alerts={len(alerts)}")
     if alerts:
-        print(f"[ALERT] sample: {_console_safe(_template_line(alerts[0]))}")
+        print(f"[ALERT] sample: {template_line(alerts[0])}")
 
-    html = _render_html(alerts, top_n=args.top)
+    html = render_html(alerts, top_n=args.top)
     subject = f"Price Tracker Alerts ({today}) - {len(alerts)}"
 
-    cfg = _load_email_config()
+    cfg = load_email_config()
     try:
-        _send_email(subject=subject, html_body=html, cfg=cfg)
+        send_email(subject=subject, html_body=html, cfg=cfg)
         print("[ALERT] Email sent successfully.")
         return 0
     except Exception as exc:
@@ -326,4 +321,3 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

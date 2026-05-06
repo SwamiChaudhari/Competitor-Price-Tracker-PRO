@@ -270,6 +270,12 @@
 # )
 
 
+
+"""
+Competitor Price Tracker — Premium Streamlit Dashboard
+Clean, modern SaaS-style layout with full filtering, charts, and table.
+"""
+
 from __future__ import annotations
 
 import io
@@ -298,118 +304,122 @@ st.markdown(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap');
 
-    /* ── Base ── */
     html, body, [class*="css"] {
         font-family: 'DM Sans', sans-serif;
-        color: #1a1a2e;
+        color: #e6edf3;
+        background-color: #0d1117;
     }
     .main .block-container {
         padding: 0 2.5rem 3rem;
         max-width: 1440px;
-        background: #f5f7fa;
+        background: #0d1117;
     }
+    [data-testid="stAppViewContainer"],
+    [data-testid="stAppViewBlockContainer"],
+    section[data-testid="stMain"] { background: #0d1117; }
 
-    /* ── Sidebar ── */
     [data-testid="stSidebar"] {
-        background: #ffffff;
-        border-right: 1px solid #e8ecf0;
+        background: #0d1117;
+        border-right: 1px solid #30363d;
     }
     [data-testid="stSidebar"] .block-container { padding: 1.5rem 1rem; }
+    [data-testid="stSidebar"] * { color: #e6edf3 !important; }
     [data-testid="stSidebar"] label {
         font-size: 0.72rem !important;
         font-weight: 600 !important;
         letter-spacing: 0.06em !important;
         text-transform: uppercase !important;
-        color: #94a3b8 !important;
+        color: #8b949e !important;
+    }
+    [data-testid="stSidebar"] span[data-baseweb="tag"] {
+        background: #1c2333 !important;
+        border: 1px solid #30363d !important;
     }
 
-    /* ── Header strip ── */
     .header-strip {
-        background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
-        border-radius: 0 0 20px 20px;
+        background: linear-gradient(135deg, #0d1117 0%, #161b22 60%, #1c2333 100%);
+        border-bottom: 1px solid #30363d;
+        border-radius: 0 0 16px 16px;
         padding: 1.6rem 2.5rem 1.8rem;
         margin: 0 -2.5rem 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .header-left {}
     .app-title {
         font-size: 1.6rem;
         font-weight: 700;
-        color: #ffffff;
+        color: #e6edf3;
         letter-spacing: -0.02em;
         margin: 0;
     }
     .app-subtitle {
         font-size: 0.8rem;
-        color: #94a3b8;
+        color: #8b949e;
         margin: 2px 0 0;
         font-family: 'DM Mono', monospace;
     }
     .refresh-badge {
-        background: rgba(255,255,255,0.07);
-        border: 1px solid rgba(255,255,255,0.12);
+        background: #161b22;
+        border: 1px solid #30363d;
         border-radius: 8px;
         padding: 0.45rem 0.9rem;
         font-family: 'DM Mono', monospace;
         font-size: 0.72rem;
-        color: #94a3b8;
+        color: #8b949e;
         white-space: nowrap;
     }
 
-    /* ── KPI Cards ── */
     .kpi-card {
-        background: #ffffff;
+        background: #161b22;
         border-radius: 14px;
         padding: 1.2rem 1.4rem;
-        border: 1px solid #e8ecf0;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.03);
+        border: 1px solid #30363d;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         margin-bottom: 1.5rem;
         position: relative;
         overflow: hidden;
     }
     .kpi-card::before {
-        content: '';
+        content: \'\';
         position: absolute;
         top: 0; left: 0; right: 0;
         height: 3px;
         border-radius: 14px 14px 0 0;
     }
-    .kpi-card.blue::before  { background: linear-gradient(90deg, #2563eb, #60a5fa); }
-    .kpi-card.green::before { background: linear-gradient(90deg, #059669, #34d399); }
-    .kpi-card.red::before   { background: linear-gradient(90deg, #dc2626, #f87171); }
-    .kpi-card.amber::before { background: linear-gradient(90deg, #d97706, #fbbf24); }
-    .kpi-card.purple::before{ background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+    .kpi-card.blue::before  { background: linear-gradient(90deg, #2f81f7, #79c0ff); }
+    .kpi-card.green::before { background: linear-gradient(90deg, #2ea043, #56d364); }
+    .kpi-card.red::before   { background: linear-gradient(90deg, #da3633, #ff7b72); }
+    .kpi-card.amber::before { background: linear-gradient(90deg, #9e6a03, #e3b341); }
+    .kpi-card.purple::before{ background: linear-gradient(90deg, #6e40c9, #bc8cff); }
 
     .kpi-label {
         font-size: 0.68rem;
         font-weight: 600;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: #94a3b8;
+        color: #8b949e;
         margin-bottom: 0.5rem;
     }
     .kpi-value {
         font-size: 2rem;
         font-weight: 700;
-        color: #0f172a;
+        color: #e6edf3;
         line-height: 1;
-        font-family: 'DM Mono', monospace;
+        font-family: \'DM Mono\', monospace;
     }
     .kpi-sub {
         font-size: 0.75rem;
-        color: #64748b;
+        color: #6e7681;
         margin-top: 0.35rem;
     }
 
-    /* ── Chart Cards ── */
     .chart-card {
-        background: #ffffff;
+        background: #161b22;
         border-radius: 14px;
         padding: 1.2rem 1.4rem 0.8rem;
-        border: 1px solid #e8ecf0;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        border: 1px solid #30363d;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         margin-bottom: 1.5rem;
     }
     .chart-title {
@@ -417,56 +427,75 @@ st.markdown(
         font-weight: 600;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #64748b;
+        color: #8b949e;
         margin-bottom: 0.8rem;
     }
 
-    /* ── Section label ── */
     .section-label {
         font-size: 0.7rem;
         font-weight: 600;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #94a3b8;
+        color: #6e7681;
         margin: 1.8rem 0 0.8rem;
         padding-bottom: 0.4rem;
-        border-bottom: 1px solid #e8ecf0;
+        border-bottom: 1px solid #21262d;
     }
 
-    /* ── Alert chips ── */
-    .chip-hot   { background:#fef2f2; color:#dc2626; border:1px solid #fecaca; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
-    .chip-watch { background:#fffbeb; color:#b45309; border:1px solid #fde68a; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
-    .chip-ok    { background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
+    .chip-hot   { background:#3d1f1f; color:#ff7b72; border:1px solid #6e2b2b; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
+    .chip-watch { background:#2d2208; color:#e3b341; border:1px solid #5a4000; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
+    .chip-ok    { background:#1a2e1a; color:#56d364; border:1px solid #2a5a2a; border-radius:6px; padding:2px 8px; font-size:0.7rem; font-weight:600; }
 
-    /* ── Table override ── */
-    [data-testid="stDataFrame"] { border-radius: 12px; overflow: hidden; }
+    [data-testid="stDataFrame"] { border-radius: 12px; overflow: hidden; border: 1px solid #30363d; }
     [data-testid="stTextInput"] > div > div {
+        background: #161b22 !important;
         border-radius: 8px !important;
-        border-color: #e2e8f0 !important;
-        font-family: 'DM Sans', sans-serif !important;
+        border-color: #30363d !important;
+        color: #e6edf3 !important;
+        font-family: \'DM Sans\', sans-serif !important;
     }
 
-    /* ── Sidebar divider ── */
+    [data-baseweb="select"] > div {
+        background: #161b22 !important;
+        border-color: #30363d !important;
+        color: #e6edf3 !important;
+    }
+    [data-baseweb="popover"],
+    [data-baseweb="menu"] { background: #1c2333 !important; border-color: #30363d !important; }
+    [data-baseweb="menu"] li { color: #e6edf3 !important; }
+    [data-baseweb="menu"] li:hover { background: #21262d !important; }
+
+    [data-testid="stDateInput"] input {
+        background: #161b22 !important;
+        border-color: #30363d !important;
+        color: #e6edf3 !important;
+    }
+
+    button[kind="secondary"], button[kind="primary"] {
+        background: #1c2333 !important;
+        border-color: #30363d !important;
+        color: #e6edf3 !important;
+    }
+    button[kind="secondary"]:hover, button[kind="primary"]:hover {
+        background: #2f81f7 !important;
+        border-color: #2f81f7 !important;
+        color: #ffffff !important;
+    }
+
     .sidebar-section {
         font-size: 0.65rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #cbd5e1;
+        color: #6e7681;
         margin: 1.2rem 0 0.5rem;
     }
 
-    /* ── Empty state ── */
-    .empty-state {
-        text-align: center;
-        padding: 3rem 1rem;
-        color: #94a3b8;
-    }
-    .empty-state-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    .empty-state-title { font-size: 1rem; font-weight: 600; color: #64748b; }
-    .empty-state-sub { font-size: 0.8rem; margin-top: 0.25rem; }
+    .empty-state { text-align:center; padding:3rem 1rem; color:#6e7681; }
+    .empty-state-icon { font-size:2.5rem; margin-bottom:0.5rem; }
+    .empty-state-title { font-size:1rem; font-weight:600; color:#8b949e; }
+    .empty-state-sub { font-size:0.8rem; margin-top:0.25rem; }
 
-    /* hide streamlit branding */
     #MainMenu, footer, header { visibility: hidden; }
     </style>
     """,
@@ -599,7 +628,9 @@ def _generate_demo() -> pd.DataFrame:
 
 @st.cache_data(ttl=60, show_spinner=False)
 def load_data() -> pd.DataFrame:
-    df = _try_gsheets() or _try_csv()
+    df = _try_gsheets()
+    if df is None or df.empty:
+        df = _try_csv()
 
     if df is not None and not df.empty:
         # Normalise column names
@@ -795,10 +826,8 @@ def render_price_trend(df: pd.DataFrame) -> None:
         line_shape="spline",
     )
     fig.update_traces(line_width=2.5)
-    fig.update_layout(
-        **PLOTLY_BASE, height=280,
-        yaxis=dict(**PLOTLY_BASE["yaxis"], tickprefix="₹"),
-    )
+    fig.update_layout(**PLOTLY_BASE, height=280)
+    fig.update_yaxes(tickprefix="₹")
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 
 
@@ -838,10 +867,8 @@ def render_top_drops(df: pd.DataFrame) -> None:
         text="discount_pct",
     )
     fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
-    fig.update_layout(
-        **PLOTLY_BASE, height=300, showlegend=False,
-        yaxis=dict(categoryorder="total ascending", **PLOTLY_BASE["yaxis"]),
-    )
+    fig.update_layout(**PLOTLY_BASE, height=300, showlegend=False)
+    fig.update_yaxes(categoryorder="total ascending")
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 
 
@@ -859,15 +886,15 @@ def render_alerts(df: pd.DataFrame) -> None:
                 st.markdown(
                     f"""
                     <div style="display:flex;align-items:center;justify-content:space-between;
-                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#fef2f2;
-                        border-radius:8px;border-left:3px solid #dc2626;">
+                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#3d1f1f;
+                        border-radius:8px;border-left:3px solid #ff7b72;">
                         <div>
-                            <div style="font-size:0.82rem;font-weight:600;color:#0f172a;">{r['product_name'][:45]}…</div>
-                            <div style="font-size:0.7rem;color:#64748b;">{r['source'].capitalize()} · {r['category']}</div>
+                            <div style="font-size:0.82rem;font-weight:600;color:#ff7b72;">{r['product_name'][:45]}…</div>
+                            <div style="font-size:0.7rem;color:#8b949e;">{r['source'].capitalize()} · {r['category']}</div>
                         </div>
                         <div style="text-align:right;">
-                            <div style="font-size:0.9rem;font-weight:700;color:#dc2626;">↓ {r['discount_pct']:.1f}%</div>
-                            <div style="font-size:0.72rem;color:#64748b;">₹{r['current_price']:,.0f}</div>
+                            <div style="font-size:0.9rem;font-weight:700;color:#ff7b72;">↓ {r['discount_pct']:.1f}%</div>
+                            <div style="font-size:0.72rem;color:#8b949e;">₹{r['current_price']:,.0f}</div>
                         </div>
                     </div>
                     """,
@@ -883,15 +910,15 @@ def render_alerts(df: pd.DataFrame) -> None:
                 st.markdown(
                     f"""
                     <div style="display:flex;align-items:center;justify-content:space-between;
-                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#fffbeb;
-                        border-radius:8px;border-left:3px solid #d97706;">
+                        padding:0.5rem 0.8rem;margin-bottom:0.4rem;background:#2d2208;
+                        border-radius:8px;border-left:3px solid #e3b341;">
                         <div>
-                            <div style="font-size:0.82rem;font-weight:600;color:#0f172a;">{r['product_name'][:45]}…</div>
-                            <div style="font-size:0.7rem;color:#64748b;">{r['source'].capitalize()} · {r['category']}</div>
+                            <div style="font-size:0.82rem;font-weight:600;color:#e3b341;">{r['product_name'][:45]}…</div>
+                            <div style="font-size:0.7rem;color:#8b949e;">{r['source'].capitalize()} · {r['category']}</div>
                         </div>
                         <div style="text-align:right;">
-                            <div style="font-size:0.9rem;font-weight:700;color:#d97706;">↓ {r['discount_pct']:.1f}%</div>
-                            <div style="font-size:0.72rem;color:#64748b;">₹{r['current_price']:,.0f}</div>
+                            <div style="font-size:0.9rem;font-weight:700;color:#e3b341;">↓ {r['discount_pct']:.1f}%</div>
+                            <div style="font-size:0.72rem;color:#8b949e;">₹{r['current_price']:,.0f}</div>
                         </div>
                     </div>
                     """,
